@@ -1,0 +1,17 @@
+1 --- 
+2 platform: linux 
+3 
+ 
+4 image_resource: 
+5   type: docker-image 
+6   source: {repository: golang, tag: 1.6-alpine} 
+7 
+ 
+8 inputs: 
+9 - name: resource-tutorial 
+10 - name: resource-app 
+11   path: gopath/src/github.com/cloudfoundry-community/simple-go-web-app 
+12 
+ 
+13 run: 
+14   path: resource-tutorial/10_job_inputs/task_run_tests.sh 
