@@ -1,4 +1,5 @@
-1 #!/bin/bash 
-2 
+#!/bin/bash 
+
+psql --username "$POSTGRES_USER" -c "select * from 
  
-3 echo $0 
+
