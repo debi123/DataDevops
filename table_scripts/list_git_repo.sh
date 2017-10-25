@@ -1,2 +1,2 @@
 #!/bin/bash
-cp *.sql ../gpdb-unit-test-output/
+cp *.sql -t ../gpdb-unit-test-output/
