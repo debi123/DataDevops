@@ -28,6 +28,8 @@ su - postgres -c '/usr/lib/postgresql/10/bin/pg_ctl start -D /usr/local/postgres
 
 su - postgres -c '/usr/lib/postgresql/10/bin/psql -a -f "/home/customers.sql"' >log 2>&1
 
+cp log /gpdb-unit-test-output
+
 #su - postgres -c '/usr/lib/postgresql/10/bin/psql -c "select * from trial.weather" '
 
 exit;
