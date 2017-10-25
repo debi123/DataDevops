@@ -26,9 +26,9 @@ su - postgres -c '/usr/lib/postgresql/10/bin/pg_ctl start -D /usr/local/postgres
 
 ##su - postgres -c '/usr/lib/postgresql/10/bin/psql -c "insert into trial.weather (city,name) values (1,121) " '
 
-su - postgres -c '/usr/lib/postgresql/10/bin/psql -a -f "/home/customers.sql"' 
+su - postgres -c '/usr/lib/postgresql/10/bin/psql -a -f "/home/customers.sql"' >>log
 
-#cp log /gpdb-unit-test-output
+cp log /gpdb-unit-test-output
 
 #su - postgres -c '/usr/lib/postgresql/10/bin/psql -c "select * from trial.weather" '
 
