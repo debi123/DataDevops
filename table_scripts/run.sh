@@ -27,8 +27,13 @@ su - postgres -c '/usr/lib/postgresql/10/bin/pg_ctl start -D /usr/local/postgres
 ##su - postgres -c '/usr/lib/postgresql/10/bin/psql -c "insert into trial.weather (city,name) values (1,121) " '
 # WHENEVER SQLERROR EXIT SQL.SQLCODE
 su - postgres -c '/usr/lib/postgresql/10/bin/psql -a -f "/home/customers.sql"' 
-err = $?
-echo $err
+psql_exit_status = $?
+echo $psql_exit_status
+
+   if [ $psql_exit_status != 0 ]; then
+     echo "psql failed while trying to run this sql script" 1>&2
+     exit $psql_exit_status
+   fi
 
 # if [ "$?" = "0" ]; then
 # 	rm *
@@ -40,4 +45,7 @@ echo $err
 
 #su - postgres -c '/usr/lib/postgresql/10/bin/psql -c "select * from trial.weather" '
 
-exit;
+#exit;
+
+echo "sql script successful"
+exit 0
