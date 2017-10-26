@@ -1,6 +1,6 @@
-DROP SCHEMA trial_gp;
+--DROP SCHEMA trial_gp;
 
-DROP TABLE trial_gp.weather;
+--DROP TABLE trial_gp.weather;
 
 CREATE schema trial_gp;
 CREATE TABLE trial_gp.weather (city int, name varchar(10)) DISTRIBUTED BY (city);
