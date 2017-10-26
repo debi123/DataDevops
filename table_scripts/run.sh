@@ -1,6 +1,5 @@
 #!/bin/sh
-psql_exit_status = 2
-echo $psql_exit_status
+
 ls
 
 cp customers.sql /home
@@ -15,7 +14,7 @@ mkdir postgres
 chmod 777  postgres
 chown postgres postgres
 
-
+EXEC SQL WHENEVER SQLERROR STOP
 ##cd /usr/lib/postgresql/10/bin/
 su - postgres -c '/usr/lib/postgresql/10/bin/initdb -D /usr/local/postgres'
 
@@ -28,12 +27,12 @@ su - postgres -c '/usr/lib/postgresql/10/bin/psql -c "CREATE schema trial" '
 ##su - postgres -c '/usr/lib/postgresql/10/bin/psql -c "insert into trial.weather (city,name) values (1,121) " '
 # WHENEVER SQLERROR EXIT SQL.SQLCODE
 #su - postgres -c '/usr/lib/postgresql/10/bin/psql -a -f "/home/customers.sql"' 
-psql_exit_status = $?
-echo $psql_exit_status
+err = $?
+echo $err
 
-   if [ $psql_exit_status != 0 ]; then
+   if [ $err != 0 ]; then
      echo "psql failed while trying to run this sql script" 1>&2
-     exit $psql_exit_status
+     exit $err
    fi
 
 # if [ "$?" = "0" ]; then
