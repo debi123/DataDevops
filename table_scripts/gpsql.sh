@@ -10,7 +10,6 @@ apk add openssh
 
 apk add sshpass
 
-apk add scp
 
 sshpass -p 'gpadmin' scp -o "StrictHostKeyChecking no" create_gp.sql gpadmin@10.63.33.203:/home/gpadmin/ftp
 
