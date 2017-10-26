@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ls
-err = 2
+err = '2'
 echo $err
 cp customers.sql /home
 chmod 777 customers.sql
