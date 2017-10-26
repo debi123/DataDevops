@@ -1,7 +1,7 @@
 -- Table: customers
 
 -- DROP TABLE customers;
-EXEC SQL WHENEVER SQLERROR STOP
+EXEC SQL WHENEVER SQLERROR STOP;
 
 CREATE TABLE my_first_table (first_column text,second_column integer);
 insert into tmy_first_table (first_column,second_column) values ('emc',121);
