@@ -20,13 +20,13 @@ su - postgres -c '/usr/lib/postgresql/10/bin/initdb -D /usr/local/postgres'
 
 su - postgres -c '/usr/lib/postgresql/10/bin/pg_ctl start -D /usr/local/postgres -l serverlog'
 
-##su - postgres -c '/usr/lib/postgresql/10/bin/psql -c "CREATE schema trial" '
+su - postgres -c '/usr/lib/postgresql/10/bin/psql -c "CREATE schema trial" '
 
 ##su - postgres -c '/usr/lib/postgresql/10/bin/psql -c "CREATE TABLE trial.weather (city integer, name integer)" '
 
 ##su - postgres -c '/usr/lib/postgresql/10/bin/psql -c "insert into trial.weather (city,name) values (1,121) " '
 # WHENEVER SQLERROR EXIT SQL.SQLCODE
-su - postgres -c '/usr/lib/postgresql/10/bin/psql -a -f "/home/customers.sql"' 
+#su - postgres -c '/usr/lib/postgresql/10/bin/psql -a -f "/home/customers.sql"' 
 psql_exit_status = $?
 echo $psql_exit_status
 
