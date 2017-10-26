@@ -1,7 +1,5 @@
 -- Table: customers
 
- DROP TABLE trial_gp.weather;
- DROP schema trial_gp;
 
 --CREATE TABLE my_first_table (first_column text,second_column integer);
 --insert into my_first_table (first_column,second_column) values ('emc',121);
