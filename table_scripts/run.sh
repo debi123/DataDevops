@@ -1,5 +1,5 @@
 #!/bin/sh
-
+psql_exit_status = 2
 ls
 
 cp customers.sql /home
