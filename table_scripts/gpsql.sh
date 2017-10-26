@@ -2,10 +2,7 @@
 #!/usr/bin/expect -f
 ##apt-get install ssh
 
-ls
 
-cp create.sql /home
-chmod 777 create.sql
 
 apk update
 
