@@ -32,10 +32,10 @@ EOF
 echo $?
 
 
-#    if [ $err != 0 ]; then
-#      echo "psql failed while trying to run this sql script" 1>&2
-#      exit $err
-#    fi
+   if [ $? != 0 ]; then
+     echo "psql failed while trying to run this sql script" 1>&2
+     exit $?
+   fi
 
 # if [ "$?" = "0" ]; then
 # 	rm *
