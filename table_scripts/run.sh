@@ -29,13 +29,13 @@ su - postgres -c '/usr/lib/postgresql/10/bin/pg_ctl start -D /usr/local/postgres
 su - postgres -c '/usr/lib/postgresql/10/bin/psql -v "ON_ERROR_STOP=1"' <<EOF
 su - postgres -c '/usr/lib/postgresql/10/bin/psql -a -f "/home/customers.sql"' 
 EOF
-exit_stat = $?
-echo $exit_stat
+
+echo $?
 
 
-if [ $exit_stat != 0 ]; then
+if [ $? ne 0 ]; then
 echo "psql failed while trying to run this sql script" 1>&2
-exit $exit_stat
+exit $?
 fi
 
 # if [ "$?" = "0" ]; then
