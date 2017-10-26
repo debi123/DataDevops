@@ -32,7 +32,7 @@ su - postgres -c '/usr/lib/postgresql/10/bin/psql -v "ON_ERROR_STOP=1" -a -f "/h
 # -a -f "/home/customers.sql"'
 # EOF
 
-
+exit $?
 echo $?
 
 
