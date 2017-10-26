@@ -26,8 +26,9 @@ su - postgres -c '/usr/lib/postgresql/10/bin/pg_ctl start -D /usr/local/postgres
 
 ##su - postgres -c '/usr/lib/postgresql/10/bin/psql -c "insert into trial.weather (city,name) values (1,121) " '
 
-su - postgres -c '/usr/lib/postgresql/10/bin/psql -a -f "/home/customers.sql"' >log 
-echi "$?"
+su - postgres -c '/usr/lib/postgresql/10/bin/psql -a -f "/home/customers.sql"' 
+err = $?
+echo $err
 
 # if [ "$?" = "0" ]; then
 # 	rm *
