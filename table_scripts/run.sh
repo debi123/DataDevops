@@ -26,7 +26,7 @@ su - postgres -c '/usr/lib/postgresql/10/bin/pg_ctl start -D /usr/local/postgres
 
 ##su - postgres -c '/usr/lib/postgresql/10/bin/psql -c "insert into trial.weather (city,name) values (1,121) " '
 # WHENEVER SQLERROR EXIT SQL.SQLCODE
-psql -d test -v "ON_ERROR_STOP=1" <<EOF
+postgres -d test -v "ON_ERROR_STOP=1" <<EOF
 su - postgres -c '/usr/lib/postgresql/10/bin/psql -a -f "/home/customers.sql"' 
 EOF
 echo $?
