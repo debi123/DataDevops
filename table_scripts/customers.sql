@@ -7,5 +7,5 @@
 
 CREATE schema trial_gp;
 CREATE TABLE trial_gp.weather (city integer, name varchar(10));
-insert into trial_gp.weather1 (city,name) values (1,'aaa');
+insert into trial_gp.weather (city,name) values (1,'aaa');
 insert into trial_gp.weather (city,name) values (2,'a1');
