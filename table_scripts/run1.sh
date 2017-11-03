@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "list" | hbase shell > tableListSummary.txt
+echo "create 'emp', 'personal data', 'professional data'" | hbase shell > tableListSummary.txt
 # ls
 
 # cp customers.sql /home
