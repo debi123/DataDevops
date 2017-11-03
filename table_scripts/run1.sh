@@ -3,9 +3,11 @@
 pwd
 cd /opt/hbase/bin
 ls -lrt
-sh start-hbase.sh
-sh zookeepers.sh
+start-hbase.sh
+zookeepers.sh
 #../opt/hbase/bin/start-hbase.sh
+
+cd /
 
 echo "create 'emp', 'personal data', 'professional data'" | hbase shell > tableListSummary.txt
 # ls
