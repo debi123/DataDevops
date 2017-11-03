@@ -2,6 +2,7 @@
 
 pwd
 cd /opt/hbase/bin
+ls -lrt
 #../opt/hbase/bin/start-hbase.sh
 
 echo "create 'emp', 'personal data', 'professional data'" | hbase shell > tableListSummary.txt
