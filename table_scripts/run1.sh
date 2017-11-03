@@ -1,7 +1,7 @@
 #!/bin/sh
 
 pwd
-./opt/hbase/bin/start-hbase.sh
+../opt/hbase/bin/start-hbase.sh
 
 echo "create 'emp', 'personal data', 'professional data'" | hbase shell > tableListSummary.txt
 # ls
