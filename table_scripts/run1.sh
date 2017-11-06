@@ -1,10 +1,10 @@
 #!/bin/sh
 
 pwd
-#cd /opt/hbase/bin
-#ls -lrt
+cd /opt/hbase/bin
+ls -lrt
 #zookeepers.sh
-#start-hbase.sh
+start-hbase.sh
 
 #../opt/hbase/bin/start-hbase.sh
 
