@@ -3,7 +3,7 @@
 pwd
 cd /opt/hbase/bin
 ls -lrt
-#zookeepers.sh
+hbase-daemons.sh start zookeeper
 start-hbase.sh
 
 #../opt/hbase/bin/start-hbase.sh
