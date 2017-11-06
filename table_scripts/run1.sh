@@ -1,16 +1,16 @@
 #!/bin/sh
 
 pwd
-cd /opt/hbase/bin
-ls -lrt
-zookeepers.sh
-start-hbase.sh
+#cd /opt/hbase/bin
+#ls -lrt
+#zookeepers.sh
+#start-hbase.sh
 
 #../opt/hbase/bin/start-hbase.sh
 
-cd /
+echo "list" | hbase shell > tableListSummary.txt
 
-echo "create 'emp', 'personal data', 'professional data'" | hbase shell > tableListSummary.txt
+#echo "create 'emp', 'personal data', 'professional data'" | hbase shell > tableListSummary.txt
 # ls
 
 # cp customers.sql /home
