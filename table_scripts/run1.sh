@@ -10,7 +10,7 @@ ls -lrt
 
 #echo "list" | hbase shell > tableListSummary.txt
 if echo -e "list" | hbase shell 2>&1 | grep -q "ERROR:" 2>/dev/null ;then echo "Hbase is not running"; fi
-#echo "list" | hbase shell > tableListSummary.txt
+echo -e "list" | hbase shell > tableListSummary.txt
 
 
 #echo "create 'emp', 'personal data', 'professional data'" | hbase shell > tableCreateSummary.txt
