@@ -18,7 +18,7 @@ cat tableListSummary.txt
 
 
 echo "create 'emp', 'personal data', 'professional data'" | hbase shell >tableCreateSummary.txt
-# ls
+ls -lrt
 
 # cp customers.sql /home
 # chmod 777 customers.sql
