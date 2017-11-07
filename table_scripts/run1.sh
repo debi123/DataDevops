@@ -1,17 +1,17 @@
 #!/bin/sh
 
 pwd
-cd /opt/hbase/bin
+#cd /opt/hbase/bin
 ls -lrt
-hbase-daemons.sh start zookeeper
-start-hbase.sh
+/opt/hbase/bin/hbase-daemons.sh start zookeeper
+/opt/hbase/bin/start-hbase.sh
 
 #../opt/hbase/bin/start-hbase.sh
 
 #echo "list" | hbase shell > tableListSummary.txt
 echo "list" | hbase shell > tableListSummary.txt
 
-#echo "create 'emp', 'personal data', 'professional data'" | hbase shell > tableListSummary.txt
+echo "create 'emp', 'personal data', 'professional data'" | hbase shell > tableCreateSummary.txt
 # ls
 
 # cp customers.sql /home
