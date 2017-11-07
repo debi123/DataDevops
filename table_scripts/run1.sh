@@ -3,8 +3,8 @@
 pwd
 #cd /opt/hbase/bin
 ls -lrt
-cd /home
-java -version
+# cd /home
+# java -version
 /opt/hbase/bin/hbase-daemons.sh start zookeeper
 /opt/hbase/bin/start-hbase.sh
 
