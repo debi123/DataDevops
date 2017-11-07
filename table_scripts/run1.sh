@@ -5,8 +5,9 @@ pwd
 ls -lrt
 # cd /home
 # java -version
-/opt/hbase/bin/hbase-daemons.sh start zookeeper
-/opt/hbase/bin/start-hbase.sh
+/usr/bin/hbase-daemons.sh start zookeeper
+# /opt/hbase/bin/start-hbase.sh
+/usr/bin/start-hbase.sh
 
 #../opt/hbase/bin/start-hbase.sh
 
