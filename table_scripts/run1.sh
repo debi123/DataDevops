@@ -3,6 +3,7 @@
 pwd
 #cd /opt/hbase/bin
 ls -lrt
+java -version
 /opt/hbase/bin/hbase-daemons.sh start zookeeper
 /opt/hbase/bin/start-hbase.sh
 
