@@ -9,9 +9,12 @@ ls -lrt
 #../opt/hbase/bin/start-hbase.sh
 
 #echo "list" | hbase shell > tableListSummary.txt
-if echo -e "list" | hbase shell 2>&1 | grep -q "ERROR:" 2>/dev/null ;then echo "Hbase is not running"; fi
-echo -e "list" | hbase shell > tableListSummary.txt
+#if echo -e "list" | hbase shell 2>&1 | grep -q "ERROR:" 2>/dev/null ;then echo "Hbase is not running"; fi
+echo -e "list" | hbase shell >>tableListSummary.txt
 ls -lrt
+echo "error not getting captured" >>tableListSummary.txt
+ls -lrt
+cat tableListSummary.txt
 
 
 #echo "create 'emp', 'personal data', 'professional data'" | hbase shell > tableCreateSummary.txt
