@@ -8,6 +8,7 @@ start-hbase.sh
 
 #../opt/hbase/bin/start-hbase.sh
 
+#echo "list" | hbase shell > tableListSummary.txt
 echo "list" | hbase shell > tableListSummary.txt
 
 #echo "create 'emp', 'personal data', 'professional data'" | hbase shell > tableListSummary.txt
