@@ -17,7 +17,7 @@ ls -lrt
 cat tableListSummary.txt
 
 
-#echo "create 'emp', 'personal data', 'professional data'" | hbase shell > tableCreateSummary.txt
+echo "create 'emp', 'personal data', 'professional data'" | hbase shell >tableCreateSummary.txt
 # ls
 
 # cp customers.sql /home
