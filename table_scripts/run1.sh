@@ -5,10 +5,13 @@ pwd
 ls -lrt
 # cd /home
 # java -version
-sudo apt-get install
+sudo apt-get update
+java -version
 sudo apt-get install default-jre
-sudo apt-get install openjdk-8-jdk
-sudo update-alternatives --config java
+sudo apt-get install default-jdk
+# sudo apt-get install default-jre
+# sudo apt-get install openjdk-8-jdk
+# sudo update-alternatives --config java
 /opt/hbase/bin/hbase-daemons.sh start zookeeper
 /opt/hbase/bin/start-hbase.sh
 # /hbase-1.3.1/bin/start-hbase.sh
