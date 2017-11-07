@@ -7,8 +7,8 @@ ls -lrt
 # java -version
 sudo apt-get update
 java -version
-sudo apt-get install default-jre
-sudo apt-get install default-jdk
+sudo apt-get install -y default-jre
+sudo apt-get install -y default-jdk
 # sudo apt-get install default-jre
 # sudo apt-get install openjdk-8-jdk
 # sudo update-alternatives --config java
