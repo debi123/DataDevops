@@ -13,6 +13,8 @@ sudo apt-get install -y default-jdk
 # sudo apt-get install -y openjdk-8-jdk
 java -version
 whereis java
+whereis jvm
+whereis java-7-openjdk-amd64
 # sudo apt-get install default-jre
 # sudo apt-get install openjdk-8-jdk
 # sudo update-alternatives --config java
