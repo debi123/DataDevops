@@ -11,7 +11,8 @@ java -version
 # sudo apt-get install -y default-jre
 # sudo apt-get install -y default-jdk
 # sudo apt-get install -y openjdk-8-jre
-sudo apt-get install -y openjdk-8-jdk
+# sudo apt-get install -y openjdk-8-jdk
+su -c "yum install java-1.8.0-openjdk"
 java -version
 whereis java
 whereis jvm
